@@ -1,13 +1,110 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+.nav{
+  width: 100%;
+  height: 80px;
+  background: #333;
+  color: #fff;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav i{
+  font-size: 2rem;
+  cursor: pointer;
+  position: relative;
+}
+.quantity-circle{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  text-align: center;
+  line-height: 20px;
+  color: #333;
+  font-size: 1rem;
+}
+.cards-result-container{
+  width: 100%;
+  margin-top: 2rem;
+}
+.card{
+  height: 100px;
+  width: 100%;
+  border-bottom: 2px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+figure{
+   display: flex;
+   max-height: 100%;
+   max-width: 200px;
+   justify-content: center;
+   align-items: center;
+}
+figure section{
+  width: 50%;
+  height: 100%;
+}
+figure img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.load{
+  width: 100%;
+  display: grid;
+  place-content: center;
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+.del-btn{
+  outline: none;
+  border: none;
+  background: rgb(239, 169, 169);
+  color: #333;
+  border-radius: 3px;
+  cursor: pointer;
+  transform: scale(1.2);
+  padding: 0.1rem;
+}
+.card input{
+  width: 60px;
+  height: 45px;
+  font-size: 2rem;
+}
+.total{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.total h2{
+  color: rgb(211, 91, 91);
+  min-width: 50%;
+}
+.total h3{
+  color: rgb(55, 105, 214);
+  font-size: 1.5rem;
+  min-width: 50%;
+}
+.total :is(h2,h3){
+  text-align: center;
 }
