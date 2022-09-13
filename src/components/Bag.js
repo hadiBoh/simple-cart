@@ -8,7 +8,7 @@ const Bag = () => {
     const {carts , empty} = useContext(Data)
     if (empty === true) {
       return(
-        <div className="load">your card is empty !!!</div>
+        <div className="load">your cart is empty !!!</div>
       )
     }else{
       return (
